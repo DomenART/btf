@@ -1,0 +1,134 @@
+.landing__intro
+    height: 750px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 100px
+    background: url('../img/intro-bg.jpg') 50% 50% no-repeat
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 1
+        background-color: rgba(0,0,0,0.6)
+
+.landing__intro-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    z-index: 2
+
+.landing__intro-logo
+    margin-bottom: 70px
+    img
+        width: 280px
+        height: 147px
+
+.landing__intro-title
+    margin-bottom: 50px
+    text-align: center
+    color: #ffffff
+    font-size: 36px
+    line-height: 1.23
+    font-weight: 600
+
+.landing__intro-button
+    padding: 15px 34px
+    background-color: #ca2027
+    color: #ffffff
+    font-size: 14px
+    white-space: nowrap
+    font-weight: 700
+    line-height: 1
+    text-transform: uppercase
+    &:hover
+        color: #ffffff
+        text-decoration: none
+        background-color: darken(#ca2027, 5%)
+
+.landing__features-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    align-items: flex-start
+
+.landing__features
+    margin-bottom: 80px
+    padding-bottom: 80px
+    border-bottom: 1px solid rgba(202, 32, 39, 0.2)
+
+.landing__tecnics-title
+    margin-bottom: 60px
+    font-size: 52px
+    font-weight: 600
+    color: #000000
+    text-align: center
+
+.landing__technics
+    .nav-tabs
+        margin-bottom: 60px
+    .nav-item
+        width: 25%
+        text-align: center
+        font-size: 20px
+        font-weight: 600
+        line-height: 1.35
+    .nav-link
+        color: #777777
+        border: 0
+        border-bottom: 3px solid #eeeeee
+        &:hover
+            border-bottom: 3px solid #eeeeee
+        &.active
+            color: #222222
+            border-bottom: 3px solid #ca2027
+            &:hover
+                border-bottom: 3px solid #ca2027
+    .carousel-indicators
+        li
+            width: 8px
+            height: 8px
+            margin: 0 6px
+            border-radius: 50%
+            background-color: rgba(34, 34, 34, 0.4)
+            &.active
+                background-color:  rgba(34, 34, 34, 1)
+    .carousel-control-prev-icon
+        background: none
+        width: 20px
+        height: 20px
+        border-left: 3px solid #222222
+        border-bottom: 3px solid #222222
+        transform: rotate(45deg)
+    .carousel-control-next-icon
+        background: none
+        width: 20px
+        height: 20px
+        border-left: 3px solid #222222
+        border-bottom: 3px solid #222222
+        transform: rotate(-135deg)
+
+.technics-item__pricelist
+    width: 100%
+    thead
+        border-bottom: 1px solid #000
+    tbody
+        tr:nth-of-type(n)
+            background: #ffffff
+        tr:nth-of-type(2n)
+            background: #eeeeee
+        tr
+            border-bottom: 1px solid #d9d9d9
+        td
+            color: #4d4c4c
+    td
+        padding: 20px
+        font-size: 18px
+    th
+        padding: 20px
+        font-size: 18px

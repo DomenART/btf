@@ -1,0 +1,66 @@
+.main-header
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 5
+    padding: 0 40px
+    background-color: rgba(0,0,0,0.7)
+
+.main-header__content
+    height: 80px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.main-header__leftside
+    display: flex
+    flex-basis: 65%
+    justify-content: flex-end
+
+.main-header__menu-list
+    display: flex
+    align-items: center
+    margin: 0 -15px
+    padding: 0
+    list-style: none
+    li
+        margin: 0 15px
+    a
+        padding: 20px 0
+        color: #ffffff
+        font-size: 16px
+        font-weight: 500
+        text-transform: uppercase
+        &:hover
+            color: #ffffff
+            text-decoration: none
+
+.main-header__rightside
+    display: flex
+    flex-basis: 35%
+    justify-content: flex-end
+
+.main-header__drivers
+    margin-right: 30px
+    padding-bottom: 3px
+    font-size: 20px
+    color: #ffffff
+    text-decoration: none
+    border-bottom: 1px solid #ffffff
+    white-space: nowrap
+    &:hover
+        color: #ffffff
+        text-decoration: none
+
+.main-header__contacts-button
+    padding: 15px 34px
+    background-color: #ca2027
+    color: #ffffff
+    font-size: 14px
+    white-space: nowrap
+    font-weight: 700
+    &:hover
+        color: #ffffff
+        text-decoration: none
+        background-color: darken(#ca2027, 5%)
