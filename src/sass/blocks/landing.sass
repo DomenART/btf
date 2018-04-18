@@ -3,7 +3,7 @@
     display: flex
     align-items: center
     justify-content: center
-    margin-bottom: 100px
+    margin-bottom: 45px
     background: url('../img/intro-bg.jpg') 50% 50% no-repeat
     background-size: cover
     position: relative
@@ -25,13 +25,13 @@
     z-index: 2
 
 .landing__intro-logo
-    margin-bottom: 70px
+    margin-bottom: 65px
     img
         width: 280px
         height: 147px
 
 .landing__intro-title
-    margin-bottom: 50px
+    margin-bottom: 45px
     text-align: center
     color: #ffffff
     font-size: 36px
@@ -39,7 +39,7 @@
     font-weight: 600
 
 .landing__intro-button
-    padding: 15px 34px
+    padding: 18px 35px
     background-color: #ca2027
     color: #ffffff
     font-size: 14px
@@ -58,12 +58,22 @@
     align-items: flex-start
 
 .landing__features
-    margin-bottom: 80px
-    padding-bottom: 80px
-    border-bottom: 1px solid rgba(202, 32, 39, 0.2)
+    max-width: 1200px
+    margin: 0 auto
+    margin-bottom: 100px
+    padding-bottom: 95px
+    position: relative
+    &::after
+        content: ''
+        width: 1200px
+        max-width: 1200px
+        position: absolute
+        bottom: 0
+        left: 0
+        border-bottom: 1px solid rgba(202, 32, 39, 0.2)
 
 .landing__tecnics-title
-    margin-bottom: 60px
+    margin-bottom: 40px
     font-size: 52px
     font-weight: 600
     color: #000000
@@ -80,6 +90,7 @@
         font-weight: 600
         line-height: 1.35
     .nav-link
+        padding: 20px 0
         color: #777777
         border: 0
         border-bottom: 3px solid #eeeeee
@@ -135,12 +146,12 @@
         font-size: 18px
 
 .landing__preorder
-    margin-bottom: 135px
+    margin-bottom: 145px
     padding: 135px 0
     background-color: #ca2027
 
 .landing__preorder-title
-    margin-bottom: 110px
+    margin-bottom: 85px
     text-align: center
     font-size: 52px
     font-weight: 600
@@ -157,41 +168,40 @@
     margin: 0 auto
 
 .landing__credit-title
-    margin-bottom: 40px
+    margin-bottom: 65px
     text-align: center
     font-size: 52px
     line-height: 1.23
     font-weight: 600
     color: #000000
 
-.credit__input-desc
-    display: block
-    color: #3f4145
-    font-size: 18px
-    font-weight: 700
-
-.credit__columns-wrapper
-    display: flex
-    & > div
-        flex-basis: 50%
-    & > div:first-of-type
-        margin-right: 48px
+.landing__credit-terms
+    padding: 0 25px
+    ol
+        padding-left: 15px
+    a
+        text-decoration: none
+        color: #405acc
+        &:hover
+            color: #5d7bff
 
 .landing__credit-result
-    margin-bottom: 30px
-    padding: 10px 24px
+    margin-bottom: 40px
+    padding: 18px 24px
     text-align: right
     color: #ffffff
     background-color: #424242
 
 .landing__credit-desc
-    font-size: 15px
+    font-size: 16px
     font-weight: 400
     color: rgba(255,255,255,.7)
     line-height: 1.6
+    letter-spacing: 1px
 
 .landing__credit-number
     margin-bottom: 20px
+    font-family: $font-result
     color: #fff
     font-size: 21px
     font-weight: 700
@@ -204,12 +214,34 @@
 .landing__credit-email
     flex-basis: 50%
     margin-right: 40px
-    padding: 10px 5px 10px 30px
+    padding: 20px 5px 10px 60px
     background-color: #ca2027
     color: #ffffff
     font-size: 26px
     line-height: 1.55
     font-weight: 400
+    position: relative
+
+.landing__credit-email-sign
+    width: 22px
+    height: 22px
+    position: absolute
+    top: 20px
+    left: 20px
+    background-color: #ffffff
+    border-radius: 50%
+    &::before
+        content: 'i'
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 2
+        transform: translate(-50%,-50%)
+        color: #ca2027
+        font-size: 15px
+        font-family: 'Arial'
+        line-height: 1.55
+        font-weight: 700
 
 .landing__credit-doc
     flex-basis: 50%

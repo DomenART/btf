@@ -5,7 +5,7 @@
     left: 0
     z-index: 5
     padding: 0 40px
-    background-color: rgba(0,0,0,0.7)
+    background-color: rgba(0,0,0,0.8)
 
 .main-header__content
     height: 80px
@@ -15,8 +15,10 @@
 
 .main-header__leftside
     display: flex
-    flex-basis: 65%
-    justify-content: flex-end
+    flex-basis: 65.8%
+    justify-content: center
+    @include media-breakpoint-only(xl)
+        justify-content: flex-end
 
 .main-header__menu-list
     display: flex
@@ -25,7 +27,7 @@
     padding: 0
     list-style: none
     li
-        margin: 0 15px
+        margin: 0 20px 0 14px
     a
         padding: 20px 0
         color: #ffffff
@@ -38,26 +40,27 @@
 
 .main-header__rightside
     display: flex
-    flex-basis: 35%
+    flex-basis: 33%
     justify-content: flex-end
 
 .main-header__drivers
-    margin-right: 30px
+    margin-right: 35px
     padding-bottom: 3px
     font-size: 20px
     color: #ffffff
     text-decoration: none
     border-bottom: 1px solid #ffffff
     white-space: nowrap
+    letter-spacing: 1px
     &:hover
         color: #ffffff
         text-decoration: none
 
 .main-header__contacts-button
-    padding: 15px 34px
+    padding: 14px 32px
     background-color: #ca2027
     color: #ffffff
-    font-size: 14px
+    font-size: 15px
     white-space: nowrap
     font-weight: 700
     &:hover
