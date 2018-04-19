@@ -28,6 +28,11 @@
                     </div>
                 </div>
             </div>
+            <button class="menu-button" type="button">
+                <span class="menu-button__line-1"></span>
+                <span class="menu-button__line-2"></span>
+                <span class="menu-button__line-3"></span>
+            </button>
         </header>
         <div class="landing__intro">
             <div class="landing__intro-content">
@@ -38,59 +43,60 @@
                 <a href="#" class="landing__intro-button">Выбрать машину</a>
             </div>
         </div>
-        <section class="landing__features">
-            <div class="landing__features-wrapper">
-                <div class="features-item">
-                    <div class="features-item__pic">
-                        <img class="features-item__wallet-image" src="img/wallet.svg?61448254b6f3fadc8e39ca291e7fc2f2" alt="">
+        <div class="container">
+            <section class="landing__features">
+                <div class="landing__features-grid">
+                    <div class="features-item">
+                        <div class="features-item__pic">
+                            <img class="features-item__wallet-image" src="img/wallet.svg?61448254b6f3fadc8e39ca291e7fc2f2" alt="">
+                        </div>
+                        <div class="features-item__title">
+                            Самые<br>
+                            <span>низкие цены</span>
+                        </div>
+                        <div class="features-item__text">
+                            Существенно ниже рынка: мы обновляем парк техники и не заламываем цены.
+                        </div>
                     </div>
-                    <div class="features-item__title">
-                        Самые<br>
-                        <span>низкие цены</span>
+                    <div class="features-item">
+                        <div class="features-item__pic">
+                            <img class="features-item__safe-image" src="img/safe.svg?4ae542725216ac22125ef2f416073d81" alt="">
+                        </div>
+                        <div class="features-item__title">
+                            Лизинг и <br>
+                            <span>рассрочка</span>
+                        </div>
+                        <div class="features-item__text">
+                            Поможем оформить договор лизинга или предоставим рассрочку.
+                        </div>
                     </div>
-                    <div class="features-item__text">
-                        Существенно ниже рынка: мы обновляем парк техники и не заламываем цены.
+                    <div class="features-item">
+                        <div class="features-item__pic">
+                            <img class="features-item__map-image" src="img/map.svg?d64639f6e29941ce8964c01417c20d1e" alt="">
+                        </div>
+                        <div class="features-item__title">
+                            Осмотр <br>
+                            <span>в вашем городе</span>
+                        </div>
+                        <div class="features-item__text">
+                            Техника находится в Московской области, по согласованию осмотр возможен в вашем городе.
+                        </div>
+                    </div>
+                    <div class="features-item">
+                        <div class="features-item__pic">
+                            <img class="features-item__diamond-image" src="img/diamond.svg?d2bbe544bf29d47eb074cb7fe0a9e459" alt="">
+                        </div>
+                        <div class="features-item__title">
+                            Состояние — <br>
+                            <span>отличное!</span>
+                        </div>
+                        <div class="features-item__text">
+                            Мы поддерживаем свой автопарк в идеальном состоянии и проводим все ТО точно в срок
+                        </div>
                     </div>
                 </div>
-                <div class="features-item">
-                    <div class="features-item__pic">
-                        <img class="features-item__safe-image" src="img/safe.svg?4ae542725216ac22125ef2f416073d81" alt="">
-                    </div>
-                    <div class="features-item__title">
-                        Лизинг и <br>
-                        <span>рассрочка</span>
-                    </div>
-                    <div class="features-item__text">
-                        Поможем оформить договор лизинга или предоставим рассрочку.
-                    </div>
-                </div>
-                <div class="features-item">
-                    <div class="features-item__pic">
-                        <img class="features-item__map-image" src="img/map.svg?d64639f6e29941ce8964c01417c20d1e" alt="">
-                    </div>
-                    <div class="features-item__title">
-                        Осмотр <br>
-                        <span>в вашем городе</span>
-                    </div>
-                    <div class="features-item__text">
-                        Техника находится в Московской области, по согласованию осмотр возможен в вашем городе.
-                    </div>
-                </div>
-                <div class="features-item">
-                    <div class="features-item__pic">
-                        <img class="features-item__diamond-image" src="img/diamond.svg?d2bbe544bf29d47eb074cb7fe0a9e459" alt="">
-                    </div>
-                    <div class="features-item__title">
-                        Состояние — <br>
-                        <span>отличное!</span>
-                    </div>
-                    <div class="features-item__text">
-                        Мы поддерживаем свой автопарк в идеальном состоянии и проводим все ТО точно в срок
-                        <span>воффвааф</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="landing__technics">
             <div class="container">
                 <h2 class="landing__tecnics-title">Техника на продажу</h2>
@@ -133,7 +139,7 @@
                                     </ul>
                                 </div>
                                 <div class="technics-item__photo">
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div id="carouselExampleIndicators" class="carousel slide">
                                         <ol class="carousel-indicators">
                                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -444,42 +450,30 @@
             <div class="container">
                 <h2 class="landing__questions-title">Вопросы и ответы</h2>
                 <div class="question-item">
-                    <div class="question-item__row">
-                        <div class="question-item__question">Вопрос</div>
-                        <div class="question-item__title">Где посмотреть?</div>
-                    </div>
-                    <div class="question-item__row">
-                        <div class="question-item__answer">Ответ</div>
-                        <div class="question-item__text">
-                            <p>Осмотр техники возможен на двух площадках:</p>
-                            <p>Московская область: трасса М-7, Павлово-Посадский район, деревня Кузнецы, дом 58Д.
-                            Новосибирская область: Коченевский район, МО Прокудский сельсовет, ДАООТ «Чикский элеватор»</p>
-                            <p><span>Также есть возможность осмотра в вашем городе</span>: для этого оставьте заявку на интересующую модель или свяжитесь с нами по телефону в разделе «контакты».</p>
-                        </div>
+                    <div class="question-item__question">Вопрос</div>
+                    <div class="question-item__title">Где посмотреть?</div>
+                    <div class="question-item__answer">Ответ</div>
+                    <div class="question-item__text">
+                        <p>Осмотр техники возможен на двух площадках:</p>
+                        <p>Московская область: трасса М-7, Павлово-Посадский район, деревня Кузнецы, дом 58Д.
+                        Новосибирская область: Коченевский район, МО Прокудский сельсовет, ДАООТ «Чикский элеватор»</p>
+                        <p><span>Также есть возможность осмотра в вашем городе</span>: для этого оставьте заявку на интересующую модель или свяжитесь с нами по телефону в разделе «контакты».</p>
                     </div>
                 </div>
                 <div class="question-item">
-                    <div class="question-item__row">
-                        <div class="question-item__question">Вопрос</div>
-                        <div class="question-item__title">Варианты оплаты?</div>
-                    </div>
-                    <div class="question-item__row">
-                        <div class="question-item__answer">Ответ</div>
-                        <div class="question-item__text">
-                            <p>Возможен наличный и безналичный расчет. Также возможно приобретение в лизинг или оплата <span>в рассрочку</span>.</p>
-                        </div>
+                    <div class="question-item__question">Вопрос</div>
+                    <div class="question-item__title">Варианты оплаты?</div>
+                    <div class="question-item__answer">Ответ</div>
+                    <div class="question-item__text">
+                        <p>Возможен наличный и безналичный расчет. Также возможно приобретение в лизинг или оплата <span>в рассрочку</span>.</p>
                     </div>
                 </div>
                 <div class="question-item">
-                    <div class="question-item__row">
-                        <div class="question-item__question">Вопрос</div>
-                        <div class="question-item__title">Почему цены значительно ниже рыночных?</div>
-                    </div>
-                    <div class="question-item__row">
-                        <div class="question-item__answer">Ответ</div>
-                        <div class="question-item__text">
-                            <p>Мы - транспортная компания и поддерживаем свой автопарк в идеальном состоянии: в том числе те машины, что продаются на этом сайте. Сейчас мы полностью обновляем свой автопарк новой техникой и хотим быстрее передать текущую в надежные руки.</p>
-                        </div>
+                    <div class="question-item__question">Вопрос</div>
+                    <div class="question-item__title">Почему цены значительно ниже рыночных?</div>
+                    <div class="question-item__answer">Ответ</div>
+                    <div class="question-item__text">
+                        <p>Мы - транспортная компания и поддерживаем свой автопарк в идеальном состоянии: в том числе те машины, что продаются на этом сайте. Сейчас мы полностью обновляем свой автопарк новой техникой и хотим быстрее передать текущую в надежные руки.</p>
                     </div>
                 </div>
             </div>
