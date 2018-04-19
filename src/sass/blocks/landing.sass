@@ -268,22 +268,45 @@
 
 .landings__contacts-map
     flex-basis: 50%
+    background-color: #ca2027
+
+.landings__contacts-phone
+    letter-spacing: -0.5px
 
 .landings__contacts-text
     flex-basis: 50%
-    padding: 70px
+    padding: 135px 70px
     background-color: #000000
     font-size: 24px
     color: #ffffff
     font-weight: 300
+    ul
+        margin-bottom: 48px
+        padding-left: 20px
+        list-style: none
+        li
+            position: relative
+            &::before
+                content: ''
+                width: 10px
+                height: 10px
+                background-color: #ffffff
+                border-radius: 50%
+                position: absolute
+                top: 10px
+                left: -22px
+
+.landings__contacts-title
+    font-size: 30px
+    margin-bottom: 40px
 
 .landing__questions
-    padding-top: 90px
+    padding-top: 100px
     padding-bottom: 45px
     background-color: #ca2027
 
 .landing__questions-title
-    margin-bottom: 45px
+    margin-bottom: 40px
     text-align: center
     font-size: 52px
     color: #ffffff

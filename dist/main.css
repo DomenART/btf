@@ -6332,8 +6332,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'FuturaPT';
-  src: url(fonts/FuturaDemiC.eot?fb8c8b764b406974a951e90c2451b8d6?#iefix) format("embedded-opentype"), url(fonts/FuturaDemiC.woff?f14598ba0f23a58d14d19b18d4932767) format("woff"), url(fonts/FuturaDemiC.ttf?b79b743427b7ecfcffe86bc8bc0974fd) format("truetype");
-  font-weight: 600;
+  src: url(fonts/FuturaLightC.eot?76bbb8d3dc6ddb446fc7b263ec77a443?#iefix) format("embedded-opentype"), url(fonts/FuturaLightC.woff?c5d6eb8c21f7cd1836526e6dc88a6784) format("woff"), url(fonts/FuturaLightC.ttf?3f4b5cece695801d8644ffe63186e00f) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url(fonts/FuturaBookC.eot?8dead36e5619cfcead2e9c860fe4de5c?#iefix) format("embedded-opentype"), url(fonts/FuturaBookC.woff?1d75ea1dfdcb40adbab57a561b970679) format("woff"), url(fonts/FuturaBookC.ttf?d98ec07c06f535d46cdfdce2e2da19fb) format("truetype");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -6344,14 +6350,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'FuturaPT';
-  src: url(fonts/FuturaLightC.eot?76bbb8d3dc6ddb446fc7b263ec77a443?#iefix) format("embedded-opentype"), url(fonts/FuturaLightC.woff?c5d6eb8c21f7cd1836526e6dc88a6784) format("woff"), url(fonts/FuturaLightC.ttf?3f4b5cece695801d8644ffe63186e00f) format("truetype");
-    src-font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'FuturaPT';
-  src: url(fonts/FuturaBookC.eot?8dead36e5619cfcead2e9c860fe4de5c?#iefix) format("embedded-opentype"), url(fonts/FuturaBookC.woff?1d75ea1dfdcb40adbab57a561b970679) format("woff"), url(fonts/FuturaBookC.ttf?d98ec07c06f535d46cdfdce2e2da19fb) format("truetype");
-  font-weight: normal;
+  src: url(fonts/FuturaDemiC.eot?fb8c8b764b406974a951e90c2451b8d6?#iefix) format("embedded-opentype"), url(fonts/FuturaDemiC.woff?f14598ba0f23a58d14d19b18d4932767) format("woff"), url(fonts/FuturaDemiC.ttf?b79b743427b7ecfcffe86bc8bc0974fd) format("truetype");
+  font-weight: 600;
   font-style: normal; }
 
 @font-face {
@@ -6636,23 +6636,46 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex; }
 
 .landings__contacts-map {
-  flex-basis: 50%; }
+  flex-basis: 50%;
+  background-color: #ca2027; }
+
+.landings__contacts-phone {
+  letter-spacing: -0.5px; }
 
 .landings__contacts-text {
   flex-basis: 50%;
-  padding: 70px;
+  padding: 135px 70px;
   background-color: #000000;
   font-size: 24px;
   color: #ffffff;
   font-weight: 300; }
+  .landings__contacts-text ul {
+    margin-bottom: 48px;
+    padding-left: 20px;
+    list-style: none; }
+    .landings__contacts-text ul li {
+      position: relative; }
+      .landings__contacts-text ul li::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: -22px; }
+
+.landings__contacts-title {
+  font-size: 30px;
+  margin-bottom: 40px; }
 
 .landing__questions {
-  padding-top: 90px;
+  padding-top: 100px;
   padding-bottom: 45px;
   background-color: #ca2027; }
 
 .landing__questions-title {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 52px;
   color: #ffffff;
@@ -6928,7 +6951,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 16px; }
 
 .question-item__question {
-  flex-basis: 20%;
+  flex-basis: 12.5%;
   color: #ffffff;
   font-size: 20px;
   font-weight: 300;
@@ -6942,7 +6965,7 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 1.55; }
 
 .question-item__answer {
-  flex-basis: 20%;
+  flex-basis: 12.5%;
   color: #ffffff;
   font-size: 20px;
   font-weight: 300;
