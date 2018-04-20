@@ -1,0 +1,48 @@
+.cart
+    width: 80px
+    height: 80px
+    background-color: transparent
+    position: fixed
+    top: 100px
+    right: 50px
+    z-index: 5
+    cursor: pointer
+    border: 0
+    border-radius: 50%
+    transition: transform 0.25s
+    &:hover
+        .cart__pic
+            transform: translate(-50%, -50%) scale(1.1)
+            transition: transform 0.25s
+
+.cart__pic
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 80px
+    height: 80px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 50%
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+    background-color: rgba(255,255,255,.8)
+    transition: transform 0.25s
+    svg
+        width: 40px
+        height: 40px
+        stroke: #000
+
+.cart__count
+    width: 30px
+    height: 30px
+    background-color: red
+    color: #fff
+    border-radius: 30px
+    position: absolute
+    right: -3px
+    bottom: -3px
+    text-align: center
+    line-height: 30px
+    font-family: Arial,Helvetica,sans-serif

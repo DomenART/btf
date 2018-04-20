@@ -212,28 +212,28 @@
                                             <td>2012</td>
                                             <td>18</td>
                                             <td>2 200 000 р.</td>
-                                            <td><button class="purchase-button" type="button">Как купить?</buton></td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
                                         </tr>
                                         <tr>
                                             <td>MAN TGS 19-400</td>
                                             <td>2013</td>
                                             <td>7</td>
                                             <td>2 500 000 р.</td>
-                                            <td><button class="purchase-button" type="button">Как купить?</buton></td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
                                         </tr>
                                         <tr>
                                             <td>MAN TGS 19-400</td>
                                             <td>2014</td>
                                             <td>53</td>
                                             <td>3 000 000 р.</td>
-                                            <td><button class="purchase-button" type="button">Как купить?</buton></td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
                                         </tr>
                                         <tr>
                                             <td>Предзаказ MAN TGS 19-400</td>
                                             <td>2017</td>
                                             <td></td>
                                             <td>от 3 500 000 р.</td>
-                                            <td><button class="purchase-button" type="button">Предзаказ</buton></td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Предзаказ</buton></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -276,7 +276,7 @@
                                 <span>Машина на гарантии.</span>
                             </div>
                         </div>
-                        <button type="button" class="preorder-item__button">Запросить информацию</button>
+                        <button type="button" class="preorder-item__button" data-toggle="modal" data-target="#preorderModal">Запросить информацию</button>
                     </article>
                     <article class="preorder-item">
                         <div class="preorder-item__image" style="background: url('../img/preorder-2.jpg') 50% 50%; background-size: cover">
@@ -478,6 +478,89 @@
                 </div>
             </div>
         </section>
+        <button class="cart" data-toggle="modal" data-target="#purchaseModal">
+            <span class="cart__pic">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><descr style="color:#bebebe;">Cart</descr><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path></svg>
+            </span>
+            <span class="cart__count">9</span>
+        </button>
+    </div>
+    <div class="purchase-popup modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog" role="document">
+            <div class="purchase-popup__content modal-content">
+                <div class="purchase-popup__title">Как купить?</div>
+                <div class="purchase-popup__product-pool">
+                    <div class="purchase-popup__product">
+                        <div class="purchase-popup__product-leftside">
+                            <div class="purchase-popup__product-title">
+                                MAN TGS 19-400 2012 г.
+                            </div>
+                        </div>
+                        <div class="purchase-popup__product-rightside">
+                            <div class="purchase-popup__counter">
+                                <button class="purchase-popup__counter-minus"></button>
+                                <div class="purchase-popup__counter-number">1</div>
+                                <button class="purchase-popup__counter-plus"></button>
+                            </div>
+                            <div class="purchase-popup__sum">
+                                2200000 р.
+                            </div>
+                        </div>
+                        <button class="purchase-popup__clear"></button>
+                    </div>
+                </div>
+                <div class="purchase-popup__products-total">
+                    Total: 42100000 р.
+                </div>
+                <div class="purchase-popup__text">
+                    Заполните форму и мы свяжемся с вами в ближайшее время. Обсудим состояние автомобиля, варианты осмотра и способы оплаты.
+                </div>
+                <form class="purchase-popup__form" method="post">
+                    <div class="form-row">
+                        <label class="purchase-popup__label" for="purchaseName">ФИО</label>
+                        <input type="text" class="form-control" id="purchaseName">
+                    </div>
+                    <div class="form-row">
+                        <label class="purchase-popup__label" for="purchaseEmail">E-mail</label>
+                        <input type="email" class="form-control" id="purchaseEmail">
+                    </div>
+                    <div class="form-row">
+                        <label class="purchase-popup__label" for="purchaseTel">Телефон</label>
+                        <input type="tel" class="form-control" id="purchaseTel">
+                    </div>
+                    <button class="purchase-popup__submit" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="preorder-popup modal fade" id="preorderModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog" role="document">
+            <div class="preorder-popup__content modal-content">
+                <div class="preorder-popup__title">
+                    Предзаказ MAN TGS 19-400
+                </div>
+                <div class="preorder-popup__text">
+                    Планируете приобрести MAN? Заполните форму и мы свяжемся с вами в ближайшее время. Обсудим количество, возраст авто и стоимость.
+                </div>
+                <form class="preorder-popup__form" method="post">
+                    <div class="form-row">
+                        <input class="preorder-popup__input form-control" type="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-row">
+                        <input class="preorder-popup__input form-control" type="text" placeholder="ФИО">
+                    </div>
+                    <div class="form-row">
+                        <input class="preorder-popup__input js-inputmask form-control" type="tel" placeholder="Телефон">
+                    </div>
+                    <button class="preorder-popup__submit" type="submit">Отправить</button>
+                </form>
+                <div class="preorder-popup__terms">
+                    Нажимая на кнопку, вы даете <a href="#">согласие на обработку персональных данных</a> и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="bundle.js"></script>
 </body>
