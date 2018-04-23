@@ -1,23 +1,39 @@
-.preorder-popup__content
+.modal-dialog
     max-width: 560px
+    @media (max-width: 1200px)
+        max-width: 460px
+    @media (max-width: 560px)
+        max-width: 100%
+
+.preorder-popup__content
     box-sizing: border-box
     min-height: 300px
     padding: 40px 45px
     border-radius: 0
+    @media (max-width: 640px)
+        padding: 20px
+    @media (max-width: 560px)
+        margin: 50px 0
 
 .preorder-popup__title
     margin-bottom: 11px
+    text-align: center
     font-size: 36px
     line-height: 1.23
     font-weight: 600
     color: #000
+    @media (max-width: 1200px)
+        font-size: 32px
 
 .preorder-popup__text
     margin-bottom: 24px
+    text-align: center
     font-size: 16px
     line-height: 1.55
     font-weight: 300
     color: #000
+    @media (max-width: 1200px)
+        font-size: 14px
 
 .preorder-popup__input
     width: 100%
@@ -30,6 +46,8 @@
     &:focus
         border-color: #c9c9c9
         outline: 0
+    @media (max-width: 640px)
+        height: 50px
 
 .preorder-popup__submit
     margin-bottom: 20px
@@ -57,3 +75,6 @@
         &:hover
             color: #ff8562
             text-decoration: none
+    @media (max-width: 640px)
+        font-size: 12px
+        line-height: 1.45

@@ -83,12 +83,14 @@
         margin: 0 20px 0 14px
     a
         display: block
-        padding: 20px 0
+        padding: 25px 0 20px
         text-align: center
         color: #ffffff
         font-size: 16px
         font-weight: 500
         text-transform: uppercase
+        &:active
+            opacity: 0.7
         &:hover
             color: #ffffff
             text-decoration: none
@@ -98,15 +100,17 @@
 .main-header__rightside
     display: flex
     flex-basis: 33%
+    align-items: center
     justify-content: flex-end
     margin-left: 15px
 
 .main-header__drivers
+    display: block
     margin-right: 35px
-    padding-bottom: 3px
     font-size: 20px
     color: #ffffff
     text-decoration: none
+    line-height: 1
     border-bottom: 1px solid #ffffff
     white-space: nowrap
     letter-spacing: 1px
@@ -115,6 +119,7 @@
         text-decoration: none
 
 .main-header__contacts-button
+    display: block
     padding: 10px 30px
     background-color: #ca2027
     color: #ffffff

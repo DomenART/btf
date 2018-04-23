@@ -14,6 +14,13 @@
         .cart__pic
             transform: translate(-50%, -50%) scale(1.1)
             transition: transform 0.25s
+        .cart__total
+            opacity: 1
+            transition: opacity 0.25s
+    @media (max-width: 640px)
+        width: 60px
+        height: 60px
+        right: 10px
 
 .cart__pic
     display: flex
@@ -33,6 +40,12 @@
         width: 40px
         height: 40px
         stroke: #000
+    @media (max-width: 640px)
+        width: 60px
+        height: 60px
+        svg
+            width: 34px
+            height: 34px
 
 .cart__count
     width: 30px
@@ -46,3 +59,38 @@
     text-align: center
     line-height: 30px
     font-family: Arial,Helvetica,sans-serif
+    @media (max-width: 640px)
+        width: 24px
+        height: 24px
+        line-height: 24px
+
+.cart__total
+    opacity: 0
+    white-space: nowrap
+    background: #292929
+    color: #fff
+    font-size: 15px
+    box-sizing: border-box
+    padding: 9px 13px
+    border-radius: 3px
+    position: absolute
+    left: calc(-100% - 50px)
+    top: 50%
+    transform: translateY(-50%)
+    transition: opacity 0.25s
+    &::before
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        border: solid transparent
+        border-top-width: medium
+        border-right-width: medium
+        border-bottom-width: medium
+        border-left-width: medium
+        border-left-color: transparent
+        border-width: 10px
+        top: 50%
+        right: -20px
+        transform: translateY(-50%)
+        border-left-color: #292929

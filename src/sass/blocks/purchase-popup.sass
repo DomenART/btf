@@ -4,6 +4,10 @@
     min-height: 300px
     padding: 40px
     border-radius: 0
+    @media (max-width: 560px)
+        margin: 50px 0
+    @media (max-width: 480px)
+        padding: 20px
 
 .purchase-popup__title
     margin-bottom: 30px
@@ -38,6 +42,8 @@
                 background-color: #a0a0a0
             &::after
                 background-color: #a0a0a0
+    @media (max-width: 640px)
+        flex-direction: column
 
 .purchase-popup__product-leftside
     flex-basis: 50%
@@ -52,6 +58,8 @@
     display: flex
     align-items: center
     justify-content: space-between
+    @media (max-width: 640px)
+        justify-content: flex-start
 
 .purchase-popup__counter
     display: flex
@@ -112,6 +120,8 @@
     font-size: 16px
     font-weight: 300
     line-height: 1.55
+    @media (max-width: 640px)
+        margin-left: 20px
 
 .purchase-popup__clear
     width: 20px

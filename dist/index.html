@@ -13,19 +13,15 @@
             <div class="main-header__content">
                 <nav class="main-header__leftside">
                     <ul class="main-header__menu-list">
-                        <li><a href="#">Где посмотреть?</a></li>
-                        <li><a href="#">Оплата и доставка</a></li>
-                        <li><a href="#">Рассрочка</a></li>
-                        <li><a href="#">Предзаказ</a></li>
+                        <li><a data-scrollto="contacts" href="#contacts">Где посмотреть?</a></li>
+                        <li><a data-scrollto="contacts" href="#questions">Оплата и доставка</a></li>
+                        <li><a data-scrollto="contacts" href="#credit">Рассрочка</a></li>
+                        <li><a data-scrollto="contacts" href="#preorder">Предзаказ</a></li>
                     </ul>
                 </nav>
                 <div class="main-header__rightside">
-                    <div>
-                        <a class="main-header__drivers" href="#">Ищем водителей категории Е</a>
-                    </div>
-                    <div>
-                        <a class="main-header__contacts-button" href="#">Контакты</a>
-                    </div>
+                    <a class="main-header__drivers" href="https://бтф.рф/?utm_source=btftrucks">Ищем водителей категории Е</a>
+                    <a class="main-header__contacts-button" href="#contacts">Контакты</a>
                 </div>
             </div>
             <button class="menu-button" type="button">
@@ -40,7 +36,7 @@
                     <img src="img/logo.png?b05f0606bfece9372d476f44e5cd76dd" alt="">
                 </div>
                 <h1 class="landing__intro-title">Тягачи и полуприцепы<br> по самым низким ценам.</h1>
-                <a href="#" class="landing__intro-button">Выбрать машину</a>
+                <a class="landing__intro-button" href="#technics">Выбрать машину</a>
             </div>
         </div>
         <div class="container">
@@ -99,23 +95,29 @@
         </div>
         <section class="landing__technics">
             <div class="container">
-                <h2 class="landing__tecnics-title">Техника на продажу</h2>
-                <ul class="nav nav-tabs">
+                <h2 class="landing__technics-title">Техника на продажу</h2>
+                <select class="landing__technics-select">
+                    <option>MAN</option>
+                    <option>SCANIA</option>
+                    <option>Рефрижераторы</option>
+                    <option>Изотермы</option>
+                </select>
+                <ul class="landing__technics-tabs nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">MAN</a>
+                        <a class="nav-link active" data-toggle="tab" href="#technic-group-1">MAN</option></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SCANIA</a>
+                        <a class="nav-link" data-toggle="tab" href="#technic-group-2">SCANIA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Рефрижераторы</a>
+                        <a class="nav-link" data-toggle="tab" href="#technic-group-3">Рефрижераторы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Изотермы</a>
+                        <a class="nav-link" data-toggle="tab" href="#technic-group-4">Изотермы</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active" id="technic-group-1" role="tabpanel" aria-labelledby="home-tab">
                         <div class="technics-item">
                             <div class="technics-item__wrapper">
                                 <div class="technics-item__desc">
@@ -147,13 +149,19 @@
                                         </ol>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/technics-1.jpg?b347d24b0558a6607397a00154b1198e" alt="">
+                                                <a href="../img/technics-1.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-1.jpg?b347d24b0558a6607397a00154b1198e" data-lightbox="roadtrip" alt="">
+                                                </a>
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/technics-2.jpg?18293333403fea4c9831a78abd6eb8c1" alt="">
+                                                <a href="../img/technics-2.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-2.jpg?18293333403fea4c9831a78abd6eb8c1" data-lightbox="roadtrip" alt="">
+                                                </a>
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/technics-3.jpg?2ab550ad6eb2c758c5fed124cd5045e9" alt="">
+                                                <a href="../img/technics-3.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-3.jpg?2ab550ad6eb2c758c5fed124cd5045e9" data-lightbox="roadtrip" alt="">
+                                                </a>
                                             </div>
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -240,18 +248,308 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+                    <div class="tab-pane fade" id="technic-group-2" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="technics-item">
+                            <div class="technics-item__wrapper">
+                                <div class="technics-item__desc">
+                                    <div class="technics-item__title">SCANIA</div>
+                                    <ul class="technics-item__parametres">
+                                        <li>Стоимость: от 1 700 000 рублей </li>
+                                        <li>Год выпуска: 2010, 2011, 2012, 2013, 2014, 2015 </li>
+                                        <li>Модель: MAN TGS 19.400 4X2 BLS-WW </li>
+                                        <li>Двигатель: D 2066LF63, 400 л.с. Евро 4, рабочий объем 10.5 литров </li>
+                                        <li>Коробка передач: ZF 16 S 223 DD </li>
+                                        <li>Топливный бак: 680 литров слева, 75 литров бак AdBlue </li>
+                                    </ul>
+                                </div>
+                                <div class="technics-item__photo">
+                                    <div id="carouselExampleIndicators" class="carousel slide">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a href="../img/technics-1.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-1.jpg?b347d24b0558a6607397a00154b1198e" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="../img/technics-2.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-2.jpg?18293333403fea4c9831a78abd6eb8c1" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="technics-item__products">
+                                <table class="technics-item__pricelist">
+                                    <thead>
+                                        <tr>
+                                            <th>Модель</th>
+                                            <th>Год</th>
+                                            <th>Количество</th>
+                                            <th>Цена продажи</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>MAN TGA 19-390</td>
+                                            <td>2008</td>
+                                            <td>0</td>
+                                            <td>1 400 000 р.</td>
+                                            <td>Продано</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="technic-group-3" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="technics-item">
+                            <div class="technics-item__wrapper">
+                                <div class="technics-item__desc">
+                                    <div class="technics-item__title">Рефрижераторы</div>
+                                    <ul class="technics-item__parametres">
+                                        <li>Стоимость: от 1 700 000 рублей </li>
+                                        <li>Год выпуска: 2010, 2011, 2012, 2013, 2014, 2015 </li>
+                                        <li>Модель: MAN TGS 19.400 4X2 BLS-WW </li>
+                                        <li>Двигатель: D 2066LF63, 400 л.с. Евро 4, рабочий объем 10.5 литров </li>
+                                        <li>Коробка передач: ZF 16 S 223 DD </li>
+                                        <li>Топливный бак: 680 литров слева, 75 литров бак AdBlue </li>
+                                        <li>Тормозная система: электронная, MAN BrakeMatic, дисковые тормозные механизмы </li>
+                                    </ul>
+                                </div>
+                                <div class="technics-item__photo">
+                                    <div id="carouselExampleIndicators" class="carousel slide">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a href="../img/technics-1.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-1.jpg?b347d24b0558a6607397a00154b1198e" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="../img/technics-2.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-2.jpg?18293333403fea4c9831a78abd6eb8c1" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="../img/technics-3.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-3.jpg?2ab550ad6eb2c758c5fed124cd5045e9" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="technics-item__products">
+                                <table class="technics-item__pricelist">
+                                    <thead>
+                                        <tr>
+                                            <th>Модель</th>
+                                            <th>Год</th>
+                                            <th>Количество</th>
+                                            <th>Цена продажи</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>MAN TGS 19-400</td>
+                                            <td>2012</td>
+                                            <td>18</td>
+                                            <td>2 200 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 19-400</td>
+                                            <td>2013</td>
+                                            <td>7</td>
+                                            <td>2 500 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 19-400</td>
+                                            <td>2014</td>
+                                            <td>53</td>
+                                            <td>3 000 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Предзаказ MAN TGS 19-400</td>
+                                            <td>2017</td>
+                                            <td></td>
+                                            <td>от 3 500 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Предзаказ</buton></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="technic-group-4" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="technics-item">
+                            <div class="technics-item__wrapper">
+                                <div class="technics-item__desc">
+                                    <div class="technics-item__title">Изотермы</div>
+                                    <ul class="technics-item__parametres">
+                                        <li>Стоимость: от 1 700 000 рублей </li>
+                                        <li>Год выпуска: 2010, 2011, 2012, 2013, 2014, 2015 </li>
+                                        <li>Модель: MAN TGS 19.400 4X2 BLS-WW </li>
+                                        <li>Двигатель: D 2066LF63, 400 л.с. Евро 4, рабочий объем 10.5 литров </li>
+                                        <li>Коробка передач: ZF 16 S 223 DD </li>
+                                        <li>Топливный бак: 680 литров слева, 75 литров бак AdBlue </li>
+                                        <li>Тормозная система: электронная, MAN BrakeMatic, дисковые тормозные механизмы </li>
+                                        <li>ССУ: JOST JSK 37 C, 150 </li>
+                                        <li>Кабина внутри: L с изоляцией от холода NORDIC, пневматическая подвеска </li>
+                                        <li>Кондиционер</li>
+                                        <li>Автономный отопитель EBERSPECHER </li>
+                                        <li>Пневматическое сиденье водителя </li>
+                                        <li>Магнитола MAN Media Truck </li>
+                                        <li>Кабина снаружи: Белый/Красный цвет</li>
+                                        <li>Верхний аэродинамический спойлер</li>
+                                    </ul>
+                                </div>
+                                <div class="technics-item__photo">
+                                    <div id="carouselExampleIndicators" class="carousel slide">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a href="../img/technics-1.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-1.jpg?b347d24b0558a6607397a00154b1198e" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="../img/technics-2.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-2.jpg?18293333403fea4c9831a78abd6eb8c1" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a href="../img/technics-3.jpg" data-toggle="lightbox" data-gallery="gallery-1">
+                                                    <img class="d-block w-100" src="img/technics-3.jpg?2ab550ad6eb2c758c5fed124cd5045e9" data-lightbox="roadtrip" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="technics-item__products">
+                                <table class="technics-item__pricelist">
+                                    <thead>
+                                        <tr>
+                                            <th>Модель</th>
+                                            <th>Год</th>
+                                            <th>Количество</th>
+                                            <th>Цена продажи</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>MAN TGA 19-390</td>
+                                            <td>2008</td>
+                                            <td>0</td>
+                                            <td>1 400 000 р.</td>
+                                            <td>Продано</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGA 18-480</td>
+                                            <td>2008</td>
+                                            <td>0</td>
+                                            <td>1 450 000 р.</td>
+                                            <td>Продано</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 18-400</td>
+                                            <td>2010</td>
+                                            <td>0</td>
+                                            <td>1 800 000 р.</td>
+                                            <td>Продано</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 18-400</td>
+                                            <td>2011</td>
+                                            <td>0</td>
+                                            <td>1 900 000 р.</td>
+                                            <td>Продано</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 19-400</td>
+                                            <td>2012</td>
+                                            <td>18</td>
+                                            <td>2 200 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 19-400</td>
+                                            <td>2013</td>
+                                            <td>7</td>
+                                            <td>2 500 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAN TGS 19-400</td>
+                                            <td>2014</td>
+                                            <td>53</td>
+                                            <td>3 000 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Как купить?</buton></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Предзаказ MAN TGS 19-400</td>
+                                            <td>2017</td>
+                                            <td></td>
+                                            <td>от 3 500 000 р.</td>
+                                            <td><button class="purchase-button" type="button" data-toggle="modal" data-target="#purchaseModal">Предзаказ</buton></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="landing__preorder">
+        <section class="landing__preorder" id="preorder">
             <div class="container">
                 <h2 class="landing__preorder-title">Предзаказ</h2>
                 <div class="landing__preorder-pool">
                     <article class="preorder-item">
-                        <div class="preorder-item__image embed-responsive">
-                            <img class="embed-responsive-item" src="img/preorder-1.jpg?e8a21e63815108226d11094e45bf5533" alt="">
+                        <div class="preorder-item__image" style="background: url('../img/preorder-2.jpg') 50% 50%; background-size: cover">
                         </div>
                         <div class="preorder-item__desc">
                             <h3 class="preorder-item__title">MAN — седельный тягач</h3>
@@ -280,7 +578,6 @@
                     </article>
                     <article class="preorder-item">
                         <div class="preorder-item__image" style="background: url('../img/preorder-2.jpg') 50% 50%; background-size: cover">
-                            <!-- <img class="embed-responsive-item" src="../img/preorder-2.jpg" alt=""> -->
                         </div>
                         <div class="preorder-item__desc">
                             <h3 class="preorder-item__title">MAN — седельный тягач</h3>
@@ -305,11 +602,10 @@
                                 <span>Машина на гарантии.</span>
                             </div>
                         </div>
-                        <button type="button" class="preorder-item__button">Запросить информацию</button>
+                        <button type="button" class="preorder-item__button " data-toggle="modal" data-target="#preorderModal">Запросить информацию</button>
                     </article>
                     <article class="preorder-item">
-                        <div class="preorder-item__image embed-responsive">
-                            <img class="embed-responsive-item" src="img/preorder-3.jpg?98cb90cf0face1eafb6824d48a4c1b53" alt="">
+                        <div class="preorder-item__image" style="background: url('../img/preorder-2.jpg') 50% 50%; background-size: cover">
                         </div>
                         <div class="preorder-item__desc">
                             <h3 class="preorder-item__title">Krone SD Profi Liner - тентованный полуприцеп</h3>
@@ -328,11 +624,10 @@
                                 <span>На гарантии.</span>
                             </div>
                         </div>
-                        <button type="button" class="preorder-item__button">Запросить информацию</button>
+                        <button type="button" class="preorder-item__button " data-toggle="modal" data-target="#preorderModal">Запросить информацию</button>
                     </article>
                     <article class="preorder-item">
-                        <div class="preorder-item__image embed-responsive">
-                            <img class="embed-responsive-item" src="img/preorder-4.jpg?9d5f48c5cb97632877d3f72e61241f7d" alt="">
+                        <div class="preorder-item__image" style="background: url('../img/preorder-2.jpg') 50% 50%; background-size: cover">
                         </div>
                         <div class="preorder-item__desc">
                             <h3 class="preorder-item__title">Krone SD Cool Liner - рефрижератор</h3>
@@ -353,12 +648,12 @@
                                 <span>На гарантии.</span>
                             </div>
                         </div>
-                        <button type="button" class="preorder-item__button">Запросить информацию</button>
+                        <button type="button" class="preorder-item__button " data-toggle="modal" data-target="#preorderModal">Запросить информацию</button>
                     </article>
                 </div>
             </div>
         </section>
-        <section class="landing__credit">
+        <section class="landing__credit" id="credit">
             <h2 class="landing__credit-title">Калькулятор рассрочки</h2>
             <form class="credit">
                 <div class="credit__time-wrapper">
@@ -429,7 +724,7 @@
                 </div>
             </div>
         </section>
-        <section class="landings__contacts">
+        <section class="landings__contacts" id="contacts">
             <div class="landings__contacts-map embed-responsive">
                 <iframe class="embed-responsive-item" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0af0b2771bfa659533ab2d4b0cd41e5b1fe82f3b7ea98a551b80ed321b014650&amp;source=constructor" width="941" height="659" frameborder="0"></iframe>
             </div>
@@ -446,7 +741,7 @@
                 </ul>
                 Также есть возможность осмотра в вашем городе: для этого оставьте заявку на интересующую модель или свяжитесь с нами по телефону.
         </section>
-        <section class="landing__questions">
+        <section class="landing__questions" id="questions">
             <div class="container">
                 <h2 class="landing__questions-title">Вопросы и ответы</h2>
                 <div class="question-item">
@@ -479,14 +774,17 @@
             </div>
         </section>
         <button class="cart" data-toggle="modal" data-target="#purchaseModal">
-            <span class="cart__pic">
+            <span class="cart__pic" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="= 150 0000 р.">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><descr style="color:#bebebe;">Cart</descr><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path><path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path></svg>
             </span>
             <span class="cart__count">9</span>
+            <span class="cart__total"> = 10 000 р.</span>
         </button>
     </div>
     <div class="purchase-popup modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="close-wrapper">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-dialog" role="document">
             <div class="purchase-popup__content modal-content">
                 <div class="purchase-popup__title">Как купить?</div>
@@ -527,7 +825,7 @@
                     </div>
                     <div class="form-row">
                         <label class="purchase-popup__label" for="purchaseTel">Телефон</label>
-                        <input type="tel" class="form-control" id="purchaseTel">
+                        <input type="tel" class="form-control" id="maskTel">
                     </div>
                     <button class="purchase-popup__submit" type="submit">Отправить</button>
                 </form>
@@ -535,7 +833,9 @@
         </div>
     </div>
     <div class="preorder-popup modal fade" id="preorderModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="close-wrapper">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-dialog" role="document">
             <div class="preorder-popup__content modal-content">
                 <div class="preorder-popup__title">
@@ -552,7 +852,7 @@
                         <input class="preorder-popup__input form-control" type="text" placeholder="ФИО">
                     </div>
                     <div class="form-row">
-                        <input class="preorder-popup__input js-inputmask form-control" type="tel" placeholder="Телефон">
+                        <input class="preorder-popup__input form-control" id="maskTel" type="tel" placeholder="Телефон">
                     </div>
                     <button class="preorder-popup__submit" type="submit">Отправить</button>
                 </form>

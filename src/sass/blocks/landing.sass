@@ -80,7 +80,7 @@
     @media (max-width: 960px)
         grid-template-columns: 1fr
 
-.landing__tecnics-title
+.landing__technics-title
     margin-bottom: 40px
     font-size: 52px
     font-weight: 600
@@ -89,26 +89,6 @@
 
 .landing__technics
     margin-bottom: 40px
-    .nav-tabs
-        margin-bottom: 60px
-    .nav-item
-        width: 25%
-        text-align: center
-        font-size: 20px
-        font-weight: 600
-        line-height: 1.35
-    .nav-link
-        padding: 20px 0
-        color: #777777
-        border: 0
-        border-bottom: 3px solid #eeeeee
-        &:hover
-            border-bottom: 3px solid #eeeeee
-        &.active
-            color: #222222
-            border-bottom: 3px solid #ca2027
-            &:hover
-                border-bottom: 3px solid #ca2027
     .carousel-indicators
         li
             width: 8px
@@ -132,6 +112,44 @@
         border-left: 3px solid #222222
         border-bottom: 3px solid #222222
         transform: rotate(-135deg)
+
+.landing__technics-select
+    display: none
+    width: 100%
+    margin-bottom: 60px
+    padding: 16px 30px 16px 20px
+    background: #fff url('../img/selector-icon.svg') 96% 50% no-repeat
+    background-size: auto
+    border: 3px solid #222
+    font-size: 16px
+    font-weight: 600
+    color: #222
+    appearance: none
+    @media (max-width: 960px)
+        display: block
+
+.landing__technics-tabs
+    margin-bottom: 60px
+    .nav-item
+        width: 25%
+        text-align: center
+        font-size: 20px
+        font-weight: 600
+        line-height: 1.35
+    .nav-link
+        padding: 20px 0
+        color: #777777
+        border: 0
+        border-bottom: 3px solid #eeeeee
+        &:hover
+            border-bottom: 3px solid #eeeeee
+        &.active
+            color: #222222
+            border-bottom: 3px solid #ca2027
+            &:hover
+                border-bottom: 3px solid #ca2027
+    @media (max-width: 960px)
+        display: none
 
 .landing__preorder
     margin-bottom: 145px

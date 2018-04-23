@@ -1,10 +1,6 @@
 import Inputmask from "inputmask"
 
-$(document).ready(function(){
-  $('.js-inputmask').inputmask("+9(999) 999 - 9999");
-});
+var selector = document.getElementById("maskTel")
 
-// let selector = document.getElementById(".js-inputmask");
-//
-// let im = new Inputmask("+7({1,3}) {1,3} - {1,4}");
-// im.mask(selector);
+var im = new Inputmask("+9 (999) 999-9999")
+im.mask(selector)
